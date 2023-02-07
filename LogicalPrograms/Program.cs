@@ -11,8 +11,9 @@ namespace LogicalPrograms
         static void Main(string[] args)
         {
             Console.WriteLine("1. Fibonacci Series");
+            Console.WriteLine("2. Perfect Number");
             int option = Convert.ToInt32(Console.ReadLine());
-
+            
             switch(option)
             {
                 case 1:
@@ -20,8 +21,12 @@ namespace LogicalPrograms
                     Fibonacci fibonacci = new Fibonacci();
                     fibonacci.FibonacciSeries();
                     break;
-                        
 
+                case 2:
+                    Console.WriteLine("Perfect Number is running");
+                    PerfectNumber perfectNumber = new PerfectNumber();
+                    perfectNumber.PerfectNumberSeries();
+                    break;
             }
             Console.ReadLine();
         }
