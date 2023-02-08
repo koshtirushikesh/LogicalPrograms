@@ -13,6 +13,7 @@ namespace LogicalPrograms
             Console.WriteLine("1. Fibonacci Series");
             Console.WriteLine("2. Perfect Number");
             Console.WriteLine("3. Prime Number");
+            Console.WriteLine("4. Reverse Number");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -34,6 +35,13 @@ namespace LogicalPrograms
                     PrimeNumber primeNumber = new PrimeNumber();
                     primeNumber.CheckPrimeNumber();
                     break;
+                case 4:
+                    Console.WriteLine("Reverse number i running");
+                    ReverseNumber reverseNumber = new ReverseNumber();
+                    reverseNumber.CalculateReverseNumber();
+                    break;
+
+
             }
             Console.ReadLine();
         }
