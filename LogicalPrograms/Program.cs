@@ -15,6 +15,8 @@ namespace LogicalPrograms
             Console.WriteLine("3. Prime Number");
             Console.WriteLine("4. Reverse Number");
             Console.WriteLine("5. Coupon Number");
+            Console.WriteLine("6. Stop Watch");
+
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -45,6 +47,10 @@ namespace LogicalPrograms
                     Console.WriteLine("Coupon Number is running");
                     CouponNumber couponNumber = new CouponNumber();
                     couponNumber.GenerateCouponNumber();
+                    break;
+                case 6:
+                    StopWatch stopWatch = new StopWatch();
+                    stopWatch.RunStopWatch();
                     break;
             }
             Console.ReadLine();

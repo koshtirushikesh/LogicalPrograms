@@ -17,6 +17,7 @@ namespace LogicalPrograms
 
             for (int i = 2; i <= mid; i++)
             {
+                Console.WriteLine(i);
                 if (number % i == 0)
                 {
                     Console.Write("is not Prime.");
@@ -24,7 +25,7 @@ namespace LogicalPrograms
                     break;
                 }
             }
-            if (temp ==0)
+            if (temp == 0)
                 Console.Write(" is prime number");
 
         }
